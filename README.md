@@ -48,21 +48,21 @@ Below are examples of how the model performs on unseen test data. For each examp
 
 | Initial (Raw Image) | Actual (Ground Truth) | Predicted (Model Output) |
 | :---: | :---: | :---: |
-| ![Initial 1](docs/initial_1.jpg) | ![Actual 1](docs/actual_1.jpg) | ![Predicted 1](docs/predicted_1.jpg) |
+| ![Initial 1](docs/initial_1.png) | ![Actual 1](docs/actual_1.png) | ![Predicted 1](docs/predicted_1.png) |
 
 **Example 2: Sparse Vasculature Detection**
 *Here, the tissue sample has fewer, highly localized vessels. The model avoids false positives in the noisy background tissue and accurately pinpoints the isolated blood vessels, demonstrating high precision.*
 
 | Initial (Raw Image) | Actual (Ground Truth) | Predicted (Model Output) |
 | :---: | :---: | :---: |
-| ![Initial 2](docs/initial_2.jpg) | ![Actual 2](docs/actual_2.jpg) | ![Predicted 2](docs/predicted_2.jpg) |
+| ![Initial 2](docs/initial_2.png) | ![Actual 2](docs/actual_2.png) | ![Predicted 2](docs/predicted_2.png) |
 
 **Example 3: Small Vessel Identification**
 *This sample showcases the model's ability to detect and segment incredibly small, dispersed vessels across a wide area of tissue without losing granularity.*
 
 | Initial (Raw Image) | Actual (Ground Truth) | Predicted (Model Output) |
 | :---: | :---: | :---: |
-| ![Initial 3](docs/initial_3.jpg) | ![Actual 3](docs/actual_3.jpg) | ![Predicted 3](docs/predicted_3.jpg) |
+| ![Initial 3](docs/initial_3.png) | ![Actual 3](docs/actual_3.png) | ![Predicted 3](docs/predicted_3.png) |
 
 ---
 
@@ -71,15 +71,15 @@ Here is how the project files are organized. Keeping the architecture modular ma
 
     ├── data/                            # Local directory for downloaded Kaggle data
     ├── docs/                            # Folder for README images and documentation
-    │   ├── initial_1.jpg
-    │   ├── actual_1.jpg
-    │   ├── predicted_1.jpg
-    │   ├── initial_2.jpg
-    │   ├── actual_2.jpg
-    │   ├── predicted_2.jpg
-    │   ├── initial_3.jpg
-    │   ├── actual_3.jpg
-    │   └── predicted_3.jpg
+    │   ├── initial_1.png
+    │   ├── actual_1.png
+    │   ├── predicted_1.png
+    │   ├── initial_2.png
+    │   ├── actual_2.png
+    │   ├── predicted_2.png
+    │   ├── initial_3.png
+    │   ├── actual_3.png
+    │   └── predicted_3.png
     ├── src/                             # Main source code directory
     │   ├── data/
     │   │   └── dataset.py               # Dataset class, augmentations, and collate_fn
