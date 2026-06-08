@@ -59,7 +59,7 @@ if __name__ == '__main__':
     NUM_EPOCHS = 15
     best_loss = float('inf')
 
-    print(f"🚀 Commencing full training on {device} for {NUM_EPOCHS} epochs...")
+    print(f"Commencing full training on {device} for {NUM_EPOCHS} epochs...")
 
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
@@ -76,4 +76,4 @@ if __name__ == '__main__':
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': best_loss,
             }, save_path)
-            print(f"💾 Loss improved! New best model saved to {save_path}")
+            print(f"Loss improved! New best model saved to {save_path}")
